@@ -127,7 +127,7 @@ const Hero: React.FC<HeroProps> = ({ onSectionChange }) => {
           className="mt-12 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end"
         >
           <img 
-            src="/profile_photo.png"
+            src={`${import.meta.env.BASE_URL}profile_photo.png`}
             alt="Baris Egemen Tokul Profile" 
             className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-blue-500"
           />

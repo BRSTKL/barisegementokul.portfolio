@@ -37,7 +37,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, onSectionChange
             className="flex items-center space-x-2 focus:outline-none"
             onClick={() => handleNavClick('home')}
           >
-            <img src="/my_logo.png" alt="Baris Egemen Tokul Logo" className="h-12 w-auto" />
+            <img src={`${import.meta.env.BASE_URL}my_logo.png`} alt="Baris Egemen Tokul Logo" className="h-12 w-auto" />
             <span className="text-white font-semibold text-lg">Baris Egemen Tokul</span>
           </motion.button>
 
@@ -63,7 +63,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, onSectionChange
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="/CV_BarisEgemenTokul.pdf"
+              href={`${import.meta.env.BASE_URL}CV_BarisEgemenTokul.pdf`}
               download="CV_BarisEgemenTokul.pdf"
               className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
             >
@@ -126,7 +126,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, onSectionChange
             ))}
             <div className="pt-4 border-t border-slate-700">
               <a
-                href="/CV_BarisEgemenTokul.pdf"
+                href={`${import.meta.env.BASE_URL}CV_BarisEgemenTokul.pdf`}
                 download="CV_BarisEgemenTokul.pdf"
                 className="flex items-center space-x-2 text-slate-300 hover:text-white px-3 py-2"
               >
