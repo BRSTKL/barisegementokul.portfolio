@@ -136,48 +136,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, onProduc
           </div>
         </motion.div>
 
-        {/* Process & Methodology */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="mb-12"
-        >
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Projects I Took Part in Production
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {project.id === 'project-engineer' ? (
-              <>
-                {productionProjects.filter(p => ['pressured-vessels', 'filters', 'conveyor-systems', 'bunker'].includes(p.id)).map((prodProject) => (
-                  <div className="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                    <h3 
-                      className="text-xl font-semibold text-blue-400 mb-3 cursor-pointer hover:underline"
-                      onClick={() => onProductionProjectClick(prodProject.id)}
-                    >
-                      {prodProject.title}
-                    </h3>
-                    <p className="text-slate-300">{prodProject.description}</p>
-                  </div>
-                ))}
-              </>
-            ) : (
-              <>
-                {productionProjects.filter(p => ['quality-control-procedures', 'production-planning-management', 'energy-safety-compliance'].includes(p.id)).map((prodProject) => (
-                  <div className="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                    <h3 
-                      className="text-xl font-semibold text-blue-400 mb-3 cursor-pointer hover:underline"
-                      onClick={() => onProductionProjectClick(prodProject.id)}
-                    >
-                      {prodProject.title}
-                    </h3>
-                    <p className="text-slate-300">{prodProject.description}</p>
-                  </div>
-                ))}
-              </>
-            )}
-          </div>
-        </motion.div>
+        
 
         {/* Solution */}
         <motion.div
@@ -214,28 +173,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onBack, onProduc
           </div>
         </motion.div>
 
-        {/* Results & Impact */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8 }}
-          className="mb-12 p-6 bg-gradient-to-r from-green-900/20 to-teal-900/20 rounded-xl border border-green-800/30"
-        >
-          <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
-            <TrendingUp className="mr-3 text-green-400" size={28} />
-            Results & Business Impact
-          </h2>
-          <div className="space-y-4">
-            <div className="bg-slate-800/50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-green-400 mb-2">Immediate Outcome</h3>
-              <p className="text-slate-300">{project.outcome}</p>
-            </div>
-            <div className="bg-slate-800/50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold text-green-400 mb-2">Long-term Impact</h3>
-              <p className="text-slate-300">{project.impact}</p>
-            </div>
-          </div>
-        </motion.div>
+        
 
         {/* Image Modal */}
         {isModalOpen && selectedImage && (
