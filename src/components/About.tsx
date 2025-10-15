@@ -54,7 +54,7 @@ const About: React.FC = () => {
               </div>
 
               <a
-                href="/CV_BarisEgemenTokul.pdf"
+                href={`${import.meta.env.BASE_URL}CV_BarisEgemenTokul.pdf`}
                 download="CV_BarisEgemenTokul.pdf"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center"
               >
@@ -130,7 +130,7 @@ const About: React.FC = () => {
                   className="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center"
                 >
                   {isImagePath ? (
-                    <img src={skill.icon} alt={skill.name} className="w-10 h-10 mx-auto mb-3" />
+                    <img src={`${import.meta.env.BASE_URL}${skill.icon}`} alt={skill.name} className="w-10 h-10 mx-auto mb-3" />
                   ) : (
                     IconComponent && <IconComponent size={40} className="text-blue-400 mx-auto mb-3" />
                   )}

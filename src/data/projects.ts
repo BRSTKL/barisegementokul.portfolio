@@ -108,7 +108,7 @@ export const skills: Skill[] = [
   { name: 'Power BI', level: 85, icon: 'skills_logo/power_bi.png' },
   { name: 'Excel', level: 85, icon: 'skills_logo/excel.png' },
   { name: 'SQL', level: 85, icon: 'skills_logo/sql.png' },
-  { name: 'Python', level: 90, icon: 'skills_logo/Pyhton.png' },
+  { name: 'Python', level: 90, icon: 'skills_logo/Python.png' },
   { name: 'SAP Data Cloud', level: 80, icon: 'skills_logo/sap.png' },
   { name: 'Turkish', level: 100, icon: 'Globe' },
   { name: 'English', level: 95, icon: 'Globe' },
