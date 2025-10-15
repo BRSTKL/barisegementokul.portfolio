@@ -25,25 +25,26 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'thesis-project',
-    title: 'Thesis Project',
+    title: 'Relationship Between Electricity Market Clearing Price (PTF) and Market Value of Energy Companies: The Case of AKSEN',
     subtitle: 'My undergraduate thesis project',
-    description: 'This project was my undergraduate thesis, focusing on [Please fill in the details].',
-    technologies: ['[Technology 1]', '[Technology 2]', '[Technology 3]'],
+    description: 'This project was my undergraduate thesis, focusing on the relationship between electricity market clearing price and the market value of energy companies.',
+    technologies: ['Python', 'Excel', 'R-Studio'],
     category: 'Academic',
-    image: 'path/to/your/image.jpg', // Please provide a path to an image
+    image: 'portfolio_fotos/Thesis Project/thesis_project_placeholder.jpg', // Please provide a path to an image
     featured: true,
-    problem: '[Please describe the problem you addressed in your thesis].',
-    solution: '[Please describe your solution].',
-    outcome: '[Please describe the outcome of your project].',
-    challenges: '[Please describe the challenges you faced].',
+    problem: 'The project aimed to understand the impact of electricity market clearing price (PTF) on the market value of energy companies, using AKSEN as a case study.',
+    solution: 'The project involved analyzing historical data of PTF and AKSEN share prices, and applying statistical models like Granger Causality and VAR model to identify the relationship.',
+    outcome: 'The results showed a significant correlation between PTF prices and AKSEN prices.',
+    challenges: 'Finding and processing data from the energy sector was a major challenge. Also, learning and applying different hypothesis methods in Python was a new experience.',
     process: {
-      dataCollection: '[Please describe your data collection process].',
-      analysis: '[Please describe your analysis process].',
-      modeling: '[Please describe your modeling process].',
-      visualization: '[Please describe your visualization process].'
+      dataCollection: 'Data was collected from government entities like KAP, SPK, and EPİAŞ, and trusted outside resources such as investing.com and Bloomberg.',
+      analysis: 'The data was analyzed using Excel and R-Studio.',
+      modeling: 'Granger Causality Model and VAR Model were used to correlate AKSEN data and PTF data.',
+      visualization: 'The results were visualized using graphs to show the correlation between PTF and AKSEN prices.'
     },
-    impact: '[Please describe the impact of your project].',
-    githubUrl: 'https://github.com/BRSTKL' // Placeholder
+    impact: 'The project provides insights for potential investors in the energy sector and helps them to build an investment strategy.',
+    githubUrl: 'https://github.com/BRSTKL/barisegementokul.portfolio/blob/dev/public/portfolio_fotos/Thesis%20Project/Relationship%20Between%20Electricity%20Market%20Clearing%20Price.pdf',
+    liveUrl: 'portfolio_fotos/Thesis Project/Relationship Between Electricity Market Clearing Price.pdf'
   },
   
   

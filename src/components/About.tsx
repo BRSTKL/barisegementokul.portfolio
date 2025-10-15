@@ -119,7 +119,7 @@ const About: React.FC = () => {
           <h3 className="text-3xl font-bold text-white mb-8 text-center">Technical Skills</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skills.map((skill, index) => {
-              const isImagePath = skill.icon.startsWith('/skills_logo/') || skill.icon.startsWith('/logo/');
+              const isImagePath = skill.icon.startsWith('skills_logo/') || skill.icon.startsWith('logo/');
               const IconComponent = iconComponents[skill.icon];
               return (
                 <motion.div
